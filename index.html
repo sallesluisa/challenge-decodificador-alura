@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Decodificador de Texto</title>
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <main class="container">
+    <a href="https://www.alura.com.br/" target="_blank"><img src="./img/logo-alura.svg" alt="Logo da Alura" /></a>
+
+    <div class="input">
+      <textarea id="input-texto" placeholder="Digite seu texto..." autofocus></textarea>
+      <div class="buttons">
+        <div class="attention">
+          <img src="./img/exclamação.svg" alt="ícone de uma exclamação" />
+          <p>Apenas letras minúsculas e sem acento.</p>
+        </div>
+
+        <div class="container-btn">
+          <button onclick="criptografar()" class="btn-encrypt">
+            Criptografar
+          </button>
+          <button onclick="descriptografar()" class="btn-decrypt">
+            Descriptografar
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="output" id="output">
+      <img src="./img/lupa.svg" alt="Mensagem não encontrada" />
+      <h2>Nenhuma mensagem encontrada</h2>
+      <p>Digite um texto que deseja criptografar ou descriptografar.</p>
+    </div>
+  </main>
+  <footer>
+    <p>Desenvolvido com <img class="heart" src="./img/red-heart-icon.svg" alt=""> por <a
+        href="https://github.com/sallesluisa" target="_blank"> <span>Luísa</span></a> - 2024</p>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
+</html>

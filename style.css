@@ -1,0 +1,394 @@
+:root {
+  --primary-background: #f3f5fc;
+  --secondary-background: white;
+
+  --primary-font-color: #0a3871;
+  --secondary-font-color: #495057;
+
+  --primary-btn-background: #0a3871;
+  --primary-btn-background-hover: #072b61;
+  --primary-btn-color: white;
+
+  --secondary-btn-background: #eff1fa;
+  --secondary-btn-background-hover: #d8dfe8;
+  --secondary-btn-border-color: #0a3871;
+}
+
+body {
+  background-color: var(--primary-background);
+  margin-top: 2.5%;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+a img {
+  width: 25px;
+}
+
+#input-texto {
+  font-size: 20px;
+  width: 500px;
+  height: 400px;
+  resize: none;
+  margin: 10% 5% 0 0;
+  outline: none;
+  border: none;
+  background: transparent;
+  outline: 0;
+  text-transform: lowercase;
+  overflow: hidden;
+}
+
+textarea::placeholder {
+  color: var(--primary-font-color);
+}
+
+.attention {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-size: 12px;
+  color: var(--secondary-font-color);
+}
+
+.container-btn {
+  margin-top: 10px;
+  display: flex;
+  gap: 15px;
+}
+
+.btn-encrypt {
+  background: var(--primary-btn-background);
+  color: var(--primary-btn-color);
+  padding: 20px 100px;
+  border-radius: 24px;
+  border: solid 1px var(--primary-btn-background);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+}
+
+.btn-encrypt:hover {
+  background: var(--secondary-background);
+  color: var(--primary-btn-background);
+  cursor: pointer;
+  border: solid 1px var(--secondary-btn-border-color);
+  transition: 300ms linear;
+}
+
+.btn-decrypt {
+  background: var(--secondary-btn-background-hover);
+  color: var(--primary-btn-background);
+  padding: 20px 90px;
+  border-radius: 24px;
+  border: solid 1px var(--secondary-btn-border-color);
+}
+
+.btn-decrypt:hover {
+  background: var(--primary-btn-background);
+  color: var(--primary-btn-color);
+  cursor: pointer;
+  transition: 300ms linear;
+}
+
+.output {
+  background: var(--secondary-background);
+  border-radius: 32px;
+  width: 300px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0 1.5%;
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+}
+
+.output img {
+  width: 200px;
+}
+
+.output h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.output p {
+  font-size: 15px;
+}
+
+footer p {
+  text-align: center;
+  padding: 1.8%;
+  color: var(--primary-btn-background);
+}
+
+.heart {
+  width: 12px;
+}
+
+footer p span {
+  font-weight: bold;
+  text-decoration: underline;
+  color: inherit;
+}
+
+/* OUTPUT  */
+
+#texto {
+  font-size: 20px;
+  width: 280px;
+  height: 400px;
+  resize: none;
+  margin: 10% 5% 0 0;
+  outline: none;
+  border: none;
+  background: transparent;
+  outline: 0;
+  text-transform: lowercase;
+  overflow: hidden;
+}
+
+.btn-copiar {
+  background: var(--secondary-background);
+  color: var(--primary-btn-background);
+  padding: 15px 80px;
+  border-radius: 24px;
+  border: solid 1px var(--secondary-btn-border-color);
+  cursor: pointer;
+}
+
+@media (max-width: 2560px) {
+  #input-texto {
+    font-size: 30px;
+    width: 1000px;
+    height: 900px;
+  }
+
+  .attention {
+    font-size: 18px;
+  }
+
+  .container-btn {
+    margin-top: 10px;
+    display: flex;
+    gap: 2rem;
+  }
+  .output {
+    border-radius: 32px;
+    width: 600px;
+    height: 1050px;
+  }
+  .output img {
+    width: 400px;
+  }
+  .output h2 {
+    font-size: 30px;
+  }
+  .output p {
+    font-size: 20px;
+  }
+  #texto {
+    font-size: 30px;
+    width: 280px;
+    height: 330px;
+  }
+
+  footer p {
+    font-size: 25px;
+    padding: 1%;
+  }
+
+  .heart {
+    width: 18px;
+  }
+}
+
+@media (max-width: 1440px) {
+  #input-texto {
+    font-size: 20px;
+    width: 85vh;
+    height: 400px;
+  }
+
+  .attention {
+    font-size: 18px;
+  }
+  .output {
+    border-radius: 32px;
+    width: 60vh;
+    height: 85vh;
+  }
+
+  .output img {
+    width: 250px;
+  }
+
+  .output h2 {
+    font-size: 20px;
+  }
+
+  .output p {
+    font-size: 15px;
+  }
+
+  #texto {
+    font-size: 18px;
+    width: 380px;
+    height: 400px;
+  }
+
+  footer p {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+
+  .heart {
+    width: 18px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #input-texto {
+    font-size: 18px;
+    width: 400px;
+    height: 300px;
+  }
+
+  .output {
+    border-radius: 32px;
+    width: 300px;
+    height: 450px;
+  }
+
+  .output img {
+    width: 200px;
+  }
+
+  .output h2 {
+    font-size: 18px;
+  }
+
+  .output p {
+    font-size: 15px;
+  }
+
+  footer p {
+    font-size: 15px;
+    margin-top: 15px;
+  }
+
+  .heart {
+    width: 12px;
+  }
+
+  #texto {
+    font-size: 18px;
+    width: 280px;
+    height: 330px;
+  }
+}
+
+@media (max-width: 786px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+  }
+
+  .attention {
+    font-size: 15px;
+  }
+
+  #input-texto {
+    font-size: 18px;
+    width: 680px;
+    height: 300px;
+  }
+
+  .output {
+    border-radius: 32px;
+    margin-top: 5%;
+    width: 680px;
+    height: 300px;
+  }
+
+  .output img {
+    display: none;
+  }
+
+  .output h2 {
+    font-size: 18px;
+  }
+
+  .output p {
+    font-size: 15px;
+  }
+
+  footer p {
+    font-size: 15px;
+    margin-top: 15px;
+  }
+
+  .heart {
+    width: 12px;
+  }
+
+  #texto {
+    font-size: 18px;
+    width: 600px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 425px) {
+  #input-texto {
+    font-size: 20px;
+    width: 90vw;
+    height: 40vh;
+  }
+
+  .attention {
+    font-size: 16px;
+  }
+
+  .container-btn {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+  .output {
+    border-radius: 32px;
+    width: 90vw;
+    margin-top: 4rem;
+    height: auto;
+    padding: 5%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .output h2 {
+    font-size: 22px;
+  }
+
+  .output p {
+    font-size: 18px;
+  }
+
+  #texto {
+    font-size: 30px;
+    width: 280px;
+    height: 330px;
+  }
+
+  footer p {
+    font-size: 16px;
+    padding: 1%;
+  }
+}
